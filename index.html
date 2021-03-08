@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <title>newproject</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="header">
+        <div class="container">
+          <div class="color">
+            <div class="color1" onclick="changeColor('#2ecc71')"></div>
+            <div class="color2" onclick="changeColor('#2980b9')"></div>
+            <div class="color3" onclick="changeColor('#e67e22')"></div>
+            <div class="color4" onclick="changeColor('#8e44ad')"></div>
+          </div>
+          <div class="darkmode">
+        <input class="container_toggle" type="checkbox" id="switch" name="mode">
+        <label for="switch">Toggle</label>
+          </div>
+          <div class="body-menu">
+            <div class="logo">
+              <h2>Phone <strong>Hub</strong></h2>
+            </div>
+            <div class="circle"></div>
+            <div class="menu">
+              <ul>
+                <li>
+                  <a href="#">home</a>
+                  <a href="#">product</a>
+                  <a href="#">book</a>
+                  <a href="#">contact</a>
+                  <a href="#">about</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="banner">
+            <div class="content">
+              <div class="title-banner">
+                <p>Music is my life, booking for works...........
+                </p>
+              </div>
+              <a class="readmore" href="#">Read more</a>
+            </div>
+            <div class="slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <figure>
+                      <img src="./images/slider1.jpg" alt="">
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure>
+                      <img src="./images/slider2.jpg" alt="">
+                    </figure>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure>
+                      <img src="./images/slider3.jpg" alt="">
+                    </figure>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="img-contact">
+              <figure>
+                <img src="./images/contact.jpg" alt="">
+              </figure>
+            </div>
+            <div class="title-contact">
+              <p>Booking now</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <script src="./js/main.js"></script>
+    <script src="../package/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        delay: 5000,
+        loop: true,
+        autoplay: true,
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 0,
+          depth: 600,
+          modifier: 4,
+          slideShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
+  </body>
+</html>
