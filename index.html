@@ -21,81 +21,144 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <title>newproject</title>
   </head>
-  <body>
+  <body class="dark-theme || light-theme">
     <div id="main">
       <div class="header">
         <div class="container">
+          <input class="container_toggle" type="checkbox" id="switch" name="mode">
+        <label for="switch">Toggle</label>
           <div class="color">
             <div class="color1" onclick="changeColor('#2ecc71')"></div>
             <div class="color2" onclick="changeColor('#2980b9')"></div>
             <div class="color3" onclick="changeColor('#e67e22')"></div>
             <div class="color4" onclick="changeColor('#8e44ad')"></div>
           </div>
-          <div class="darkmode">
-        <input class="container_toggle" type="checkbox" id="switch" name="mode">
-        <label for="switch">Toggle</label>
-          </div>
           <div class="body-menu">
             <div class="logo">
               <h2>Phone <strong>Hub</strong></h2>
             </div>
             <div class="circle"></div>
+            <div class="toggle"onclick="closeMenu()"></div>
             <div class="menu">
               <ul>
                 <li>
-                  <a href="#">home</a>
-                  <a href="#">product</a>
-                  <a href="#">book</a>
-                  <a href="#">contact</a>
-                  <a href="#">about</a>
+                  <a class="hove" href="#">home</a>
+                  <a class="hove" href="#">product</a>
+                  <a class="hove" href="#">book</a>
+                  <a class="hove" href="#">contact</a>
+                  <a class="hove" href="#">about</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="banner">
-            <div class="content">
-              <div class="title-banner">
-                <p>Music is my life, booking for works...........
-                </p>
-              </div>
-              <a class="readmore" href="#">Read more</a>
-            </div>
-            <div class="slider">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <figure>
-                      <img src="./images/slider1.jpg" alt="">
-                    </figure>
-                  </div>
-                  <div class="swiper-slide">
-                    <figure>
-                      <img src="./images/slider2.jpg" alt="">
-                    </figure>
-                  </div>
-                  <div class="swiper-slide">
-                    <figure>
-                      <img src="./images/slider3.jpg" alt="">
-                    </figure>
-                  </div>
+            <div class="banner-fl">
+              <div class="content">
+                <div class="title-banner">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam amet totam beatae doloribus explicabo aliquam asperiores temporibus officiis, recusandae tenetur, animi, ducimus architecto dolorum reprehenderit. Cupiditate fuga expedita eos id!
+                  </p>
                 </div>
-                <div class="swiper-pagination"></div>
+                <a class="readmore" href="#">Read more</a>
               </div>
-            </div>
-          </div>
-          <div class="contact">
-            <div class="img-contact">
-              <figure>
-                <img src="./images/contact.jpg" alt="">
-              </figure>
-            </div>
-            <div class="title-contact">
-              <p>Booking now</p>
+              <div class="slider">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <figure>
+                        <img src="./images/slider1.jpg" alt="">
+                      </figure>
+                    </div>
+                    <div class="swiper-slide">
+                      <figure>
+                        <img src="./images/slider2.jpg" alt="">
+                      </figure>
+                    </div>
+                    <div class="swiper-slide">
+                      <figure>
+                        <img src="./images/slider3.jpg" alt="">
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="contact">
+      <div class="container">
+        <div class="contact-fl">
+          <div class="img-contact">
+            <figure>
+              <img src="./images/contact.jpg" alt="">
+            </figure>
+          </div>
+          <div class="title-contact">
+            <h3>Infomation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil magni beatae sed ratione optio dignissimos, voluptate minus corporis autem dolorem accusantium. Veritatis sunt impedit, ipsa optio vitae dicta animi.</p>
+            <a href="#">Booking now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="infomation">
+      <div class="color-info"></div>
+      <div class="container">
+       <div class="info-fl">
+        <div class="title-contact1">
+          <h3>Infomation</h3>
+          <p>Nguyễn Thanh Tùng (born July 5, 1994), known professionally as Sơn Tùng M-TP , is a Vietnamese singer-songwriter and actor. Born and raised in Thái Bình, Thái Bình Province, Tùng's family discovered his singing ability when he was two years old. His self-written 2012 and 2013 singles, "Cơn mưa ngang qua" and "Em của ngày hôm qua" launched his career. These were followed by successful singles such as "Chắc ai đó sẽ về", "Lạc trôi" and "Nơi này có anh". In 2017, Tùng released the compilation album m-tp M-TP and published his autobiography, Chạm tới giấc mơ.
+
+            He spent four years as part of Văn Production and WePro Entertainment until his record label, M-TP Entertainment, was founded in late 2016. His other works include the M-TP Ambition - Chuyến bay đầu tiên concert tour (2015–2016), a starring role in the 2014 film Dandelion (which earned him a Golden Kite Prize for Young Prominent Actor) and an appearance as a contestant on the television series The Remix. Called a "Prince of V-pop" for his popularity, Tùng has received many accolades which include a MTV Europe Music Award, a Dedication Music Award, a Mnet Asian Music Award, seven Green Wave Awards and an inclusion on Forbes Vietnam's 2018 30 Under 30 list.</p>
+          <a href="#">Booking now</a>
+        </div>
+        <div class="info-img">
+          <figure>
+            <img src="./images/mtp.jpg" alt="">
+          </figure>
+        </div>
+       </div>
+       <!-- <div class="clocking" onclick="realtimeClock()">
+        <div class="main-container">
+            <div id="clock"></div>
+        </div>
+    </div> -->
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer-fl">
+          <div class="footer-title">
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">buy</a></li>
+              <li><a href="#">help</a></li>
+              <li><a href="#">location</a></li>
+            </ul>
+          </div>
+          <div class="footer-icon">
+            <ul>
+              <li>
+                <i class="fa fa-facebook"></i>
+              </li>
+              <li>
+                <i class="fa fa-instagram"></i>
+              </li>
+
+              <li>
+                <i class="fa fa-youtube"></i>
+              </li>
+              <li>
+                <i class="fa fa-twitter"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
     
     
@@ -107,7 +170,7 @@
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 'auto',
-        delay: 5000,
+        delay: 1000,
         loop: true,
         autoplay: true,
         coverflowEffect: {
